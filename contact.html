@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Me</title>
+<meta charset="UTF-8">
+<meta name="description" content="Contact page for questions, opportunities, or cybersecurity and IT inquiries.">
+<meta name="keywords" content="Contact Form, Questions, Cybersecurity Inquiries, Feedback">
+<meta name="author" content="Broden Haltiner">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="logo-banner">
+<img src="Wesite-Logo.png" alt="My Personal Logo" class="logo">
+</div>
+</header>
+
+<nav>
+    <div class="container">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="personal interests.html">Personal Interests</a>
+    </div>
+</nav>
+
+<div class="container">
+<header class="section-container">
+<h1>Contact Me</h1>
+<p>If you have questions, opportunities, or would like to connect about cybersecurity or IT, feel free to reach out using the form below.</p>
+</header>
+
+<section>
+<form action="process_contact.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+<label for="subject">Subject:</label>
+<input type="text" id="subject" name="subject" placeholder="Subject of Your Message" required>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+
+<button type="submit">Submit</button>
+<button type="reset" class="reset">Reset</button>
+</form>
+</section>
+</div>
+
+<footer class="section-container">
+<p>&copy; 2024 Broden Haltiner. All rights reserved.</p>
+<p><a href="https://www.linkedin.com/in/broden-haltiner-664898266" target="_blank">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
