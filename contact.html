@@ -7,6 +7,7 @@
 <meta name="keywords" content="Contact Form, Questions, Cybersecurity Inquiries, Feedback">
 <meta name="author" content="Broden Haltiner">
 <link rel="stylesheet" href="styles.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -36,6 +37,8 @@
 <section>
 <form action="https://formspree.io/f/mjknovva" method="POST">
 
+<input type="hidden" name="_captcha" value="true">
+
 <label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
 
@@ -54,10 +57,9 @@
 <input type="hidden" name="_subject" value="New message from portfolio contact form">
 <input type="hidden" name="_template" value="table">
 
+<div class="g-recaptcha" data-sitekey="6LezgCEsAAAAAA0IUtfoe84Wpi6Ig93sjsb55Us9"></div>
 <button type="submit">Submit</button>
 <button type="reset" class="reset">Reset</button>
-
-<input type="hidden" name="_next" value="https://Brassden.github.io/thankyou.html">
 
 </form>
 </section>
