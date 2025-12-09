@@ -35,7 +35,7 @@
 </header>
 
 <section>
-<form action="https://formspree.io/f/mjknovva" method="POST">
+<form id="contact-form" action="https://formspree.io/f/mjknovva" method="POST">
 
 <input type="hidden" name="_captcha" value="true">
 
@@ -58,6 +58,7 @@
 <input type="hidden" name="_template" value="table">
 
 <div class="g-recaptcha" data-sitekey="6LezgCEsAAAAAA0IUtfoe84Wpi6Ig93sjsb55Us9"></div>
+
 <button type="submit">Submit</button>
 <button type="reset" class="reset">Reset</button>
 
@@ -69,6 +70,23 @@
 <p>&copy; 2025 Broden Haltiner. All rights reserved.</p>
 <p><a href="https://www.linkedin.com/in/broden-haltiner-664898266" target="_blank">LinkedIn</a></p>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    // This is where the reCAPTCHA token is stored after the user checks the box
+    var recaptchaResponse = document.querySelector('textarea[name="g-recaptcha-response"]');
+
+    if (!recaptchaResponse || recaptchaResponse.value.trim() === "") {
+      e.preventDefault();
+      alert("Please complete the reCAPTCHA before submitting the form.");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
