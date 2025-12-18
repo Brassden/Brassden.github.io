@@ -12,7 +12,7 @@ The site showcases:
 - Great Lakes surfing photography  
 
 ## 🔗 Live Website
-https://brodenhaltiner.github.io
+https://brodenhaltiner.com
 
 ## 📁 Repository Structure
 
