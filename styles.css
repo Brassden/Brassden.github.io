@@ -137,14 +137,7 @@ section p, section ul, section table {
     transform: scale(1.05);
 }
 
-.section-container {
-background: #ffffff;
-border-radius: 12px;
-padding: 24px;
-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-margin-bottom: 28px;
-}
-
+/* Gallery Styles */
 .gallery {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
